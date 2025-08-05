@@ -11,10 +11,9 @@ const app = new Hono();
 // Define allowed origins
 // Important! No trailing slash
 const allowedOrigins = new Set([
-  "http://localhost:5173",
-  "https://<your-frontend-domain>.<tld>",
+  "https://blazenote-frontend-c9l.pages.dev",
+  "https://blazenote.kind-jukebox.sxplab.com",
 ]);
-
 // https://hono.dev/docs/middleware/builtin/cors
 app.use(
   "*",
@@ -28,6 +27,9 @@ app.use(
     credentials: true,
     allowMethods: ["POST", "GET", "DELETE", "PUT"],
     allowHeaders: [
+      "Access-Control-Allow-Headers",
+      "Access-Control-Allow-Origin",
+      "Access-Control-Allow-Methods",
       "Access-Control-Allow-Headers",
       "Content-Type, Authorization, Cache-Control",
     ],
