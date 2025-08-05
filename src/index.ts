@@ -13,6 +13,7 @@ const app = new Hono();
 const allowedOrigins = new Set([
   "https://blazenote-frontend-c9l.pages.dev",
   "https://blazenote.kind-jukebox.sxplab.com",
+  
 ]);
 // https://hono.dev/docs/middleware/builtin/cors
 app.use(

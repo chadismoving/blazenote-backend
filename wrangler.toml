@@ -17,8 +17,8 @@ bucket_name = "blazenote"
 binding = "R2_BUCKET"
 # preview_bucket_name = "dev-blazenote"
 
-[vars]
-VITE_API_BASE_URL = "https://blazenote-backend.kind-jukebox.workers.dev"  # Replace with your backend domain
+# [vars]
+# VITE_API_BASE_URL = "https://blazenote-backend.kind-jukebox.workers.dev"  # Replace with your backend domain
 
 [observability.logs]
 enabled = true
